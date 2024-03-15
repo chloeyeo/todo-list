@@ -103,7 +103,9 @@ function deleteSpecificElement(index) {
 // addElement and deleteAll are callback functions
 // i.e. they are only called 'on click'
 btnElem.addEventListener("click", addElement);
-btnElem.addEventListener("keydown", function (event) {
+todoElem.addEventListener("keypress", function (event) {
+  // on INPUT button, not the Click button!!
+  // console.log(event.key);
   if (event.key === "Enter") {
     // i.e. if key pressed is the enter key
     addElement();
