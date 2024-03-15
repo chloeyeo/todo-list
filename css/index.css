@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  height: 100%;
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid gray;
+  gap: 5px;
+}
+
+.search input {
+  flex: 1;
+  padding: 5px 10px;
+}
+
+.todo,
+.btn {
+  margin: 10px;
+}
+.viewList {
+  width: 100%;
+}
+.viewList li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+.listed-item {
+  width: 320px;
+  /* background-color: red; */
+  /* word-wrap: break-word;
+        word-wrap is exactly the same as overflow-wrap! overflow-wrap is just a more standard name*/
+  overflow-wrap: break-word;
+}
+
+li.active {
+  background-color: rgb(224, 212, 101);
+}
